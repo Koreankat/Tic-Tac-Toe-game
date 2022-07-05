@@ -2,6 +2,10 @@ import Head from "next/head"
 import Image from "next/image"
 import styles from "../styles/Home.module.css"
 import X from "../assets/icon-x.svg"
+import Xgray from "../assets/icon-x-gray.svg"
+import Ogray from "../assets/icon-o-gray.svg"
+import Oblue from "../assets/icon-o-blue.svg"
+import Xblue from "../assets/icon-x-blue.svg"
 import O from "../assets/icon-o.svg"
 import React, { useState } from "react"
 import Link from "next/link"
@@ -45,13 +49,33 @@ export default function Home() {
               className={` flex justify-center items-center ${styles.switchBg} ${switchX}   rounded-xl p-3`}
               onClick={() => setSwitchOn(!switchOn)}
             >
-              <Image src={X} alt='X icon' width={32} height={32} />
+              {switchOn ? (
+                <Image src={Xblue} alt='X icon' width={32} height={32} />
+              ) : (
+                <Image src={Xgray} alt='X icon' width={32} height={32} />
+              )}
             </div>
             <div
               className={`flex justify-center items-center ${styles.switchBg} ${switchO} rounded-xl p-3`}
               onClick={() => setSwitchOn(!switchOn)}
             >
-              <Image src={O} alt='O icon' width={32} height={32} />
+              {switchOn ? (
+                <Image
+                  src={Ogray}
+                  alt='O icon'
+                  width={32}
+                  height={32}
+                  className={`${styles.img}`}
+                />
+              ) : (
+                <Image
+                  src={Oblue}
+                  alt='O icon'
+                  width={32}
+                  height={32}
+                  className={`${styles.img}`}
+                />
+              )}
             </div>
           </div>
           <h1 className={`text-[14px] ${styles.textLightergray}`}>

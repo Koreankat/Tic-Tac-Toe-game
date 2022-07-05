@@ -31,6 +31,15 @@
 .bgGray {
   background-color: #dbe8ed;
 }
+.shadowGreen {
+  border-bottom: #0f191fbe 4px solid;
+}
+.shadowGreenXl {
+  border-bottom: #0f191fbe 6px solid;
+}
+.shadowGray {
+  border-bottom: #979797 4px solid;
+}
 
 .choiceBg {
   background-color: #1f3641;
@@ -42,6 +51,26 @@
 
 .multiBtn {
   border-bottom: #208683 6px solid;
+}
+.squareX:hover {
+  background-image: url(../assets/icon-x-outline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.squareO:hover {
+  background-image: url(../assets/icon-o-outline.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.xOn {
+  background-image: url(../assets/icon-x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.oOn {
+  background-image: url(../assets/icon-o.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer {
@@ -149,6 +178,6 @@
     width: 25.75rem;
   }
   .switchBg {
-    width: 12.375rem;
+    width: 13.375rem;
   }
 }
